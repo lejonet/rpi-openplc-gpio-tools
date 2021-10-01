@@ -1,5 +1,6 @@
 # rpi-openplc-gpio-tools
 Tools to inspect the GPIO pin values, focused on being used to inspect the binary that [OpenPLC](https://www.openplcproject.com) runs.
+However, any binary that uses the digitalRead/digitalWrite functions can be hooked by these tools, but the pin names will be the ones that OpenPLC uses, instead of the number that wiringPi uses.
 # Requirements
 The only requirement is the frida python API, installable with pip: ` pip3 install frida `.
 Currently the only tested python version is 3.7.3, but the scripts should work on any python version that the frida python API supports.
